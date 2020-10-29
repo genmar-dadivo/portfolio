@@ -1,0 +1,107 @@
+html {
+    background-color: white;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+.alias { cursor: alias; }
+.all-scroll { cursor: all-scroll;}
+.auto { cursor: auto; }
+.cell { cursor: cell; }
+.context-menu { cursor: context-menu; }
+.col-resize { cursor: col-resize; }
+.copy { cursor: copy; }
+.crosshair { cursor: crosshair; }
+.default { cursor: default; }
+.e-resize { cursor: e-resize; }
+.ew-resize { cursor: ew-resize; }
+.grab { cursor: -webkit-grab; cursor: grab; }
+.grabbing { cursor: -webkit-grabbing; cursor: grabbing; }
+.help { cursor: help; }
+.move { cursor: move; }
+.n-resize { cursor: n-resize; }
+.ne-resize { cursor: ne-resize; }
+.nesw-resize { cursor: nesw-resize; }
+.ns-resize { cursor: ns-resize; }
+.nw-resize { cursor: nw-resize; }
+.nwse-resize { cursor: nwse-resize; }
+.no-drop { cursor: no-drop; }
+.none { cursor: none; }
+.not-allowed { cursor: not-allowed; }
+.pointer { cursor: pointer; }
+.progress { cursor: progress; }
+.row-resize { cursor: row-resize; }
+.s-resize { cursor: s-resize; }
+.se-resize { cursor: se-resize; }
+.sw-resize { cursor: sw-resize; }
+.text { cursor: text; }
+.w-resize { cursor: w-resize; }
+.wait { cursor: wait; }
+.zoom-in { cursor: zoom-in; }
+.zoom-out { cursor: zoom-out; }
+
+.hidden {
+    display: none;
+}
+.mywork {
+    color: #141c3a;
+    font-family: 'Raleway',sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 72px;
+    margin: 0 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.intro-mywork {
+    color: #141c3a;
+    font-size: 20px;
+    font-family: "europa", sans-serif;
+    font-weight: 300;
+    line-height: 0.5;
+}
+.rounded-corners {
+    border-radius: 25px;
+}
+.avatar {
+    margin: 2rem 0;
+    width: 210px;
+    /* height: 50%;
+    width: 50%; */
+}
+.avatar:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.intro-front {
+    text-align: center;
+}
+.sub-front {
+    font-size: 20px;
+    font-weight: 100;
+}
+.intro-contact {
+    margin-top: 150px;
+    text-align: center;
+    font-family: "europa", sans-serif;
+    font-weight: 700;
+    line-height: 0.5;
+}
+.contact-message {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    padding: calc(0.75em - 1px);
+    resize: vertical;
+}
+/* .contact-button {
+    width: 50px;
+    border-color: green;
+} */

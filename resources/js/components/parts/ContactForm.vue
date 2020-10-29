@@ -8,8 +8,7 @@
             required
             placeholder="Enter Name"
             autocomplete="off"
-            @keyup="name($event); capitalize($event)"
-            @keydown.space="preventLeadingSpace"
+            @keyup="name($event)"
             ></b-form-input>
         </b-form-group>
 
@@ -20,7 +19,6 @@
             required
             placeholder="Enter Email"
             autocomplete="off"
-            @keydown.space="disablespace"
             ></b-form-input>
         </b-form-group>
         

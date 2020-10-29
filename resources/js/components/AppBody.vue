@@ -1,7 +1,7 @@
 <template>
     <div>
         <full-page :options="options">
-            <div class="section">
+            <!-- <div class="section">
                 <navbar></navbar>
                 <front></front>
             </div>
@@ -10,7 +10,7 @@
             </div>
             <div class="section">
                 <about></about>
-            </div>
+            </div> -->
             <div class="section">
                 <contact></contact>
             </div>

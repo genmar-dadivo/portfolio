@@ -8,7 +8,8 @@
             required
             placeholder="Enter Name"
             autocomplete="off"
-            @keyup="name($event)"
+            v-model="name"
+            v-on:keypress="name(event);"
             ></b-form-input>
         </b-form-group>
 
@@ -19,6 +20,7 @@
             required
             placeholder="Enter Email"
             autocomplete="off"
+            @keydown.space="disablespace"
             ></b-form-input>
         </b-form-group>
         
@@ -42,10 +44,23 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      //name
+    }
+  },
+  watch: {
+    getName(name) {
+      //console.log('ur name is ', name);
+    }
+  },
   methods: {
     name: function(evt) {
       evt = (evt) ? evt : window.event;
       var charCode = (evt.which) ? evt.which : evt.keyCode;
+      //this.getName = !this.getName
+
+      //console.log(this.getName);
       if ((charCode > 31 && (charCode < 48 || charCode > 57)) && charCode !== 46) {
         return true;
       }

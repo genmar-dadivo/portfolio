@@ -14,6 +14,9 @@
             <div class="section">
                 <contact></contact>
             </div>
+            <!-- <div class="section">
+                <test></test>
+            </div> -->
         </full-page>
     </div>
 </template>
@@ -23,6 +26,7 @@
    import portfolio from '../components/parts/Portfolio.vue'
    import about from '../components/parts/About.vue'
    import contact from '../components/parts/Contact.vue'
+   import test from '../components/parts/Test.vue'
 
    export default {
        components: {
@@ -31,6 +35,7 @@
            'portfolio' : portfolio,
            'about' : about,
            'contact' : contact,
+           'test' : test,
        }
    }
 </script>

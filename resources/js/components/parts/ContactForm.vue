@@ -4,12 +4,13 @@
         <b-form-group>
             <b-form-input
             class="text-capitalize"
-            id="name"
             required
             placeholder="Enter Name"
             autocomplete="off"
-            v-model="name"
-            v-on:keypress="name(event);"
+            v-model="form.name"
+            v-on:blur="noDoublespace(event);"
+            v-on:keypress="nameRes(event);"
+            :formatter="formatter"
             ></b-form-input>
         </b-form-group>
 
@@ -45,31 +46,27 @@
 <script>
 export default {
   data() {
-    return {
-      //name
-    }
-  },
-  watch: {
-    getName(name) {
-      //console.log('ur name is ', name);
-    }
-  },
+      return {
+        form: {
+          name
+        }
+      }
+    },
   methods: {
-    name: function(evt) {
+    noDoublespace: function(evt) {
+      evt = (evt) ? evt : window.event;
+      var nameRaw = this.form.name;
+      this.form.name = nameRaw.replace(/\s+/g, ' ');
+    },
+    nameRes: function(evt) {
       evt = (evt) ? evt : window.event;
       var charCode = (evt.which) ? evt.which : evt.keyCode;
-      //this.getName = !this.getName
-
-      //console.log(this.getName);
       if ((charCode > 31 && (charCode < 48 || charCode > 57)) && charCode !== 46) {
         return true;
       }
       else { evt.preventDefault(); }
+      //console.log(charCode);
     },
-    preventLeadingSpace(e) {
-      if (!e.target.value || e.target.value.indexOf(' ') >= 0) { e.preventDefault(); }
-    },
-    disablespace(e) { e.preventDefault(); }
   }
 }
 </script>

@@ -10,26 +10,23 @@
         </b-container>
         <b-container fluid="sm" class="mt-5">
             <b-row>
-                <b-col v-b-hover="portfolioShowcase">
-                    <b-card
-                    bg-variant="primary"
-                    text-variant="white"
-                    v-if="isHovered"
-                    >
-                    </b-card>
-                    <b-card class="shadow pointer" v-else
+                <b-col>
+                    <b-card class="shadow pointer fall-item hover-blur fall-effect"
                         overlay
-                        img-src="https://mattfarley.ca/img/projects/awg2020.png">
+                        img-src="https://mattfarley.ca/img/projects/wfdesignbuild.png">
+                        <div class="mask">
+                            <p> {{ sample }} </p>
+                        </div>
                     </b-card>
                 </b-col>
                 <b-col>
-                    <b-card class="shadow pointer"
+                    <b-card class="shadow pointer project-item"
                         overlay
                         img-src="https://mattfarley.ca/img/projects/wfdesignbuild.png">
                     </b-card>
                 </b-col>
                 <b-col>
-                    <b-card class="shadow pointer"
+                    <b-card class="shadow pointer project-item"
                         overlay
                         img-src="https://mattfarley.ca/img/projects/wfdesignbuild.png">
                     </b-card>
@@ -37,19 +34,19 @@
             </b-row>
             <b-row class="mt-4">
                 <b-col>
-                    <b-card class="shadow pointer"
+                    <b-card class="shadow pointer project-item"
                         overlay
                         img-src="https://mattfarley.ca/img/projects/wfdesignbuild.png">
                     </b-card>
                 </b-col>
                 <b-col>
-                    <b-card class="shadow pointer"
+                    <b-card class="shadow pointer project-item"
                         overlay
                         img-src="https://mattfarley.ca/img/projects/wfdesignbuild.png">
                     </b-card>
                 </b-col>
                 <b-col>
-                    <b-card class="shadow pointer"
+                    <b-card class="shadow pointer project-item"
                         overlay
                         img-src="https://mattfarley.ca/img/projects/wfdesignbuild.png">
                     </b-card>
@@ -63,11 +60,12 @@
     export default {
         data() {
             return {
-                isHovered: false
+                isHovered: false,
+                sample: 'High-end, custom residential renovaters serving Fraser Valley homeowners.'
             }
         },
         methods: {
-            portfolioShowcase(hovered) {
+            projectHover(hovered) {
                 this.isHovered = hovered
             }
         }

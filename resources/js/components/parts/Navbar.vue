@@ -1,6 +1,6 @@
 <template>
    <div>
-      <b-navbar class="bg-custom-one mt-2" toggleable="sm" type="light" sticky="true">
+      <b-navbar class="mt-2" toggleable="sm" type="light" fixed="true" sticky="true">
          <b-navbar-brand href="#">
             <b-img-lazy class="logo hidden" fluid src="./img/MercenariesIcon.png" alt="logo"></b-img-lazy>
             <b-navbar-brand class="ml-5">Gen</b-navbar-brand>

@@ -1,10 +1,10 @@
 <template>
     <div>
         <full-page :options="options">
-            <div class="section">
+            <!-- <div class="section">
                 <navbar></navbar>
                 <front></front>
-            </div>
+            </div> -->
             <div class="section">
                 <portfolio></portfolio>
             </div>
@@ -14,6 +14,7 @@
             <div class="section">
                 <contact></contact>
             </div>
+            <!-- <fab></fab> -->
             <!-- <div class="section">
                 <test></test>
             </div> -->
@@ -27,6 +28,7 @@
     import about from '../components/parts/About.vue'
     import contact from '../components/parts/Contact.vue'
     import test from '../components/parts/Test.vue'
+    //import fab from '../components/parts/ScrolltoTop.vue'
 
     export default {
         data() {

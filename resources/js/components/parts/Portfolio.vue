@@ -63,11 +63,6 @@
                 isHovered: false,
                 sample: 'High-end, custom residential renovaters serving Fraser Valley homeowners.'
             }
-        },
-        methods: {
-            projectHover(hovered) {
-                this.isHovered = hovered
-            }
         }
     }
 </script>
